@@ -1,0 +1,28 @@
+@import '$lib/fonts.css';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: thin;
+    /* overscroll-behavior: none; */
+    background: #010101;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:link,
+a:visited {
+    color: inherit;
+}
