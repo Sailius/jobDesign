@@ -143,13 +143,6 @@
             </Block>
             <Block procentage={5} />
         </div>
-        <div>
-            <Block procentage={100}>
-                <h2 class="central_heading">
-                    Иди нахер
-                </h2>
-            </Block>
-        </div>
     </div>
 </div>
 
