@@ -26,3 +26,8 @@ a:link,
 a:visited {
     color: inherit;
 }
+
+::selection {
+	color: #eee;
+	background-color: #01010180;
+}

@@ -4,6 +4,7 @@
     import Block from './Block.svelte';
     import Splash from './Splash.svelte';
 	import Advantage from './Advantage.svelte';
+	import Plate from './Plate.svelte';
 </script>
 
 <div class="root">
@@ -98,7 +99,7 @@
             <Block procentage={30}>
                 <img
                     id="busFox"
-                    src="/images/BusFox01.png"
+                    src="/images/BusFox.png"
                     alt="Лисёнок, играющий с автобусом"
                 />
             </Block>
@@ -143,7 +144,76 @@
             </Block>
             <Block procentage={5} />
         </div>
+        <div>
+            <Block procentage={100}>
+                <h1 class="central_heading">Больше возможностей</h1>
+            </Block>
+        </div>
+        <div>
+            <Block procentage={4} />
+            <Block procentage={30}>
+                <h2 class="lined">Внутрисалонная реклама</h2>
+            </Block>
+            <Block procentage={66} />
+        </div>
+        <div>
+            <Block procentage={1} />
+            <Block procentage={98}>
+                <div class="transport_related">
+                    <Plate image_name={'StickersA4'} title={"На стикерах А4"}>
+                        Совсем не перегружают пространство, при этом хорошо читаемы.
+                    </Plate>
+                    <Plate image_name={'StickersA3'} title={"На стикерах А3"}>
+                        Большие стикеры более эффективно приковывают внимание пассажиров.
+                    </Plate>
+                    <Plate image_name={'Seats'} title={"На спинках сидений"}>
+                        Неизбежно попадает в поле зрения, чем обеспечивает высокую вовлечённость.
+                    </Plate>
+                    <Plate image_name={'TV'} title={"На цифровых экранах"}>
+                        Открывает возможности анимаций и таргетинга по времени. Быстрый запуск.
+                    </Plate>
+                </div>
+            </Block>
+            <Block procentage={1} />
+        </div>
+        <div>
+            <Block procentage={4} />
+            <Block procentage={30}>
+                <h2 class="lined">Брендирование транспорта</h2>
+            </Block>
+            <Block procentage={66} />
+        </div>
+        <div>
+            <Block procentage={1} />
+            <Block procentage={98}>
+                <div class="transport_related">
+                    <Plate image_name={'RightNew'} title={"Правый Борт"}>
+                        Максимальный контакт с людьми на тротуарах, остановках, перекрёстках.
+                    </Plate>
+                    <Plate image_name={'LeftNew'} title={"Левый борт"}>
+                        Ориентирован на водителей. Предельная эффективность в пробках.
+                    </Plate>
+                    <Plate image_name={'BackNEW'} title={"Задний Борт"}>
+                        В пробках автомобилисты видят этот борт минутами. «Движущийся билборд».
+                    </Plate>
+                    <Plate image_name={'FullNEW'} title={"Полное брендирование"}>
+                        Это уже не просто реклама, это статус. Максимальная узнаваемость.
+                    </Plate>
+                </div>
+            </Block>
+            <Block procentage={1} />
+        </div>
+        <div>
+            <Block procentage={40}>
+                <img id="resting" src="/images/FoxResting.png" alt="Отдыхающая лисичка с автобусом" />
+            </Block>
+            <Block procentage={50}>
+                <h2 class="final_words">Удачных рекламных кампаний</h2>
+            </Block>
+            <Block procentage={10} />
+        </div>
     </div>
+    <footer></footer>
 </div>
 
 <style>
@@ -151,7 +221,8 @@
 
     .root {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         font-family: 'Montserrat';
     }
 
@@ -240,6 +311,11 @@
 
     h2 {
         font-weight: 600;
+    }
+
+    h2.lined {
+        font-size: 32px;
+        align-self: flex-start;
     }
 
     h3 {
@@ -360,7 +436,9 @@
     }
     
     .central_heading {
+        font-weight: 600;
         font-size: 40px;
+        width: fit-content;
     }
 
     .reviews {
@@ -409,6 +487,7 @@
 
     .reviewer_name {
         cursor: pointer;
+        color: #f5a657;
         grid-area: 2 / 4 / 3 / 5;
         width: fit-content;
         font-size: 28px;
@@ -422,5 +501,29 @@
         align-items: flex-start;
         gap: 15px;
         font-size: 24px;
+    }
+
+    .transport_related {
+        display: flex;
+        gap: 10px;
+    }
+
+    .content > div:last-of-type {
+        height: 500px;
+    }
+
+    img#resting {
+        height: 380px;
+    }
+
+    .final_words {
+        font-weight: 550;
+        font-size: 40px;
+    }
+
+    footer {
+        width: 100%;
+        height: 400px;
+        background-color: #737873;
     }
 </style>
