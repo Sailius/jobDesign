@@ -213,7 +213,28 @@
             <Block procentage={10} />
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <div>
+            <div>
+                <p>E-mail: pr@ru-pr.ru</p>
+                <p>Телефон: 8 (800) 333 32 66</p>
+                <p>Whatsapp: 8 (923) 254 65 16</p>
+            </div>
+            <div>
+                <p>ИНН 5403065955</p>
+                <p>ОГРН 1215400042758</p>
+            </div>
+            <div>
+                <p class="c_pointer">Другие носители</p>
+                <p class="c_pointer">Города</p>
+                <p class="c_pointer">Политика конфиденциальности</p>
+            </div>
+        </div>
+        <div>
+            <div>© 2022-2025 ООО «ПР-КОМПАНИЯ»</div>
+            <div>Дизайн: lwhiteevans@gmail.com</div>
+        </div>
+    </footer>
 </div>
 
 <style>
@@ -523,7 +544,35 @@
 
     footer {
         width: 100%;
-        height: 400px;
+        height: 300px;
         background-color: #737873;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 40px;
+        color: #eee;
+        font-size: 26px;
+    }
+
+    footer > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer > div > div {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .c_pointer {
+        cursor: pointer;
+        transition: ease 0.25s;
+    }
+
+    .c_pointer:hover {
+        color: #ccc;
     }
 </style>
