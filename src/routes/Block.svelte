@@ -2,20 +2,13 @@
 	import { onMount, type Snippet } from "svelte";
 
     type Props = {
-        procentage: number;
-        children?: Snippet
+        children?: Snippet;
     }
 
-    let { procentage, children }: Props = $props();
-    
-    let block: HTMLDivElement;
-    onMount(() => {
-        block.style.width = `${procentage}%`;
-        block.style.visibility = 'visible';
-    });
+    let { children }: Props = $props();
 </script>
 
-<div bind:this={block}>
+<div>
     {#if children}
         {@render children()}
     {/if}
@@ -24,8 +17,8 @@
 <style>
     div {
         position: relative;
-        visibility: hidden;
         height: 100%;
+        width: var(--procentage);
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -11,15 +11,15 @@
     <Header />
     <div class="content">
         <div>
-            <Block procentage={15} />
-            <Block procentage={45} >
+            <Block --procentage={"15%"} />
+            <Block --procentage={"45%"} >
                 <h1>
                     Стикеры А4 в общественном транспорте Балашихи — 
                     это ваш шанс поймать взгляд клиента, пока он
                     заскучавши едет сквозь вечерние пробки.
                 </h1>
             </Block>
-            <Block procentage={35}>
+            <Block --procentage={"35%"}>
                 <img
                     id="stickerFox"
                     src="/images/CloudFox.png"
@@ -30,9 +30,9 @@
             <Bubble order="second" />
         </div>
         <div>
-            <Block procentage={5} />
-            <Block procentage={45}>
-                <Splash procentage={90} type={1}>
+            <Block --procentage={"5%"} />
+            <Block --procentage={"45%"}>
+                <Splash --procentage={"90%"} type={1}>
                     <div class="splash_content first">
                         <img
                             id="realPicture"
@@ -50,9 +50,9 @@
                     </div>
                 </Splash>
             </Block>
-            <Block procentage={50}>
+            <Block --procentage={"50%"}>
                 <div class="little_column">
-                    <Splash procentage={20} type={2}>
+                    <Splash --procentage={"20%"} type={2}>
                         <div class="splash_content">
                             <img
                                 id="stickerDrawing"
@@ -82,8 +82,8 @@
             </Block>
         </div>
         <div>
-            <Block procentage={5} />
-            <Block procentage={20}>
+            <Block --procentage={"5%"} />
+            <Block --procentage={"20%"}>
                 <h3>С нами работали</h3>
                 <div class="famous_clients">
                     <div>
@@ -96,14 +96,14 @@
                     </div>
                 </div>
             </Block>
-            <Block procentage={30}>
+            <Block --procentage={"30%"}>
                 <img
                     id="busFox"
                     src="/images/BusFox.png"
                     alt="Лисёнок, играющий с автобусом"
                 />
             </Block>
-            <Block procentage={40}>
+            <Block --procentage={"40%"}>
                 <form action="/123" method="post">
                     <h2>Запрос коммерческого предложения</h2>
                     <input type="text" name="" id="" placeholder="Компания / Имя"/>
@@ -116,16 +116,16 @@
                     </p>
                 </form>
             </Block>
-            <Block procentage={5} />
+            <Block --procentage={"5%"} />
         </div>
         <div>
-            <Block procentage={100}>
+            <Block --procentage={"100%"}>
                 <h2 class="central_heading">Отзывы</h2>
             </Block>
         </div>
         <div>
-            <Block procentage={5} />
-            <Block procentage={90}>
+            <Block --procentage={"5%"} />
+            <Block --procentage={"90%"}>
                 <div class="reviews">
                     <div class="left_arrow">{'<'}</div>
                     <div class="right_arrow">{'>'}</div>
@@ -142,23 +142,23 @@
                     </div>
                 </div>
             </Block>
-            <Block procentage={5} />
+            <Block --procentage={"5%"} />
         </div>
         <div>
-            <Block procentage={100}>
+            <Block --procentage={"100%"}>
                 <h1 class="central_heading">Больше возможностей</h1>
             </Block>
         </div>
         <div>
-            <Block procentage={4} />
-            <Block procentage={30}>
+            <Block --procentage={"4%"} />
+            <Block --procentage={"30%"}>
                 <h2 class="lined">Внутрисалонная реклама</h2>
             </Block>
-            <Block procentage={66} />
+            <Block --procentage={"66%"} />
         </div>
         <div>
-            <Block procentage={1} />
-            <Block procentage={98}>
+            <Block --procentage={"1%"} />
+            <Block --procentage={"98%"}>
                 <div class="transport_related">
                     <Plate image_name={'StickersA4'} title={"На стикерах А4"}>
                         Совсем не перегружают пространство, при этом хорошо читаемы.
@@ -174,18 +174,18 @@
                     </Plate>
                 </div>
             </Block>
-            <Block procentage={1} />
+            <Block --procentage={"1%"} />
         </div>
         <div>
-            <Block procentage={4} />
-            <Block procentage={30}>
+            <Block --procentage={"4%"} />
+            <Block --procentage={"30%"}>
                 <h2 class="lined">Брендирование транспорта</h2>
             </Block>
-            <Block procentage={66} />
+            <Block --procentage={"66%"} />
         </div>
         <div>
-            <Block procentage={1} />
-            <Block procentage={98}>
+            <Block --procentage={"1%"} />
+            <Block --procentage={"98%"}>
                 <div class="transport_related">
                     <Plate image_name={'RightNew'} title={"Правый Борт"}>
                         Максимальный контакт с людьми на тротуарах, остановках, перекрёстках.
@@ -201,16 +201,16 @@
                     </Plate>
                 </div>
             </Block>
-            <Block procentage={1} />
+            <Block --procentage={"1%"} />
         </div>
         <div>
-            <Block procentage={40}>
+            <Block --procentage={"40%"}>
                 <img id="resting" src="/images/FoxResting.png" alt="Отдыхающая лисичка с автобусом" />
             </Block>
-            <Block procentage={50}>
+            <Block --procentage={"50%"}>
                 <h2 class="final_words">Удачных рекламных кампаний</h2>
             </Block>
-            <Block procentage={10} />
+            <Block --procentage={"10%"} />
         </div>
     </div>
     <footer>
